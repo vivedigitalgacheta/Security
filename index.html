@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SISTEMA NACIONAL DE DEFENSA CIBERNÉTICA - ALERTA ROJA</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@600;700&display=swap');
+
+        body {
+            background-color: #030303;
+            color: #00ffcc;
+            font-family: 'Share Tech Mono', monospace;
+            margin: 0;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            background: rgba(10, 2, 2, 0.95);
+            border: 2px solid #ff003c;
+            box-shadow: 0 0 30px rgba(255, 0, 60, 0.4), inset 0 0 20px rgba(255, 0, 60, 0.2);
+            padding: 30px;
+            border-radius: 4px;
+            position: relative;
+        }
+
+        .container::before {
+            content: "CRITICAL SECURITY BREACH";
+            position: absolute;
+            top: -12px;
+            left: 20px;
+            background: #ff003c;
+            color: #fff;
+            padding: 2px 10px;
+            font-size: 11px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 1px dashed #ff003c;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-family: 'Rajdhani', sans-serif;
+            color: #ff003c;
+            font-size: 26px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 0 0 10px rgba(255, 0, 60, 0.7);
+        }
+
+        .sub-header {
+            color: #888;
+            font-size: 12px;
+            margin-top: 5px;
+            letter-spacing: 1px;
+        }
+
+        .warning-box {
+            background: linear-gradient(90deg, rgba(255,0,60,0.15) 0%, rgba(10,2,2,1) 100%);
+            border-left: 5px solid #ff003c;
+            padding: 15px;
+            margin-bottom: 20px;
+            font-size: 15px;
+            line-height: 1.6;
+            color: #fff;
+        }
+
+        .data-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            background: #080202;
+            border: 1px solid #331118;
+            padding: 15px;
+            margin-bottom: 20px;
+            font-size: 13px;
+        }
+
+        .data-item span {
+            color: #ff003c;
+            font-weight: bold;
+        }
+
+        .evidence-section {
+            text-align: center;
+            border: 1px solid #ff003c;
+            padding: 15px;
+            background: #050101;
+            margin-top: 20px;
+        }
+
+        .evidence-section p {
+            color: #ff003c;
+            font-weight: bold;
+            margin-bottom: 12px;
+            letter-spacing: 1px;
+            font-size: 14px;
+        }
+
+        .evidence-section img {
+            max-width: 100%;
+            border: 1px solid #440011;
+            filter: contrast(1.1);
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 11px;
+            color: #666;
+            margin-top: 25px;
+            border-top: 1px solid #220505;
+            padding-top: 10px;
+            letter-spacing: 1px;
+        }
+
+        .blink {
+            animation: blinker 1s linear infinite;
+        }
+
+        @keyframes blinker {
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>CENTRAL DE MONITOREO Y CIBERSEGURIDAD</h1>
+            <div class="sub-header">UNIDAD DE FISCALIZACIÓN Y AUDITORÍA DE INFRAESTRUCTURA PÚBLICA</div>
+        </header>
+
+        <div class="warning-box">
+            <span class="blink">■</span> <strong>ALERTA DE SEGURIDAD CRÍTICA:</strong> El sistema central ha neutralizado y bloqueado esta terminal de manera permanente. Su comportamiento en red ha sido clasificado como <strong>violación grave a la ley de recursos tecnológicos estatales</strong>.
+        </div>
+
+        <div class="data-grid">
+            <div class="data-item"><span>ESTADO:</span> BLOQUEO TOTAL INDEFINIDO</div>
+            <div class="data-item"><span>NIVEL DE AMENAZA:</span> CRÍTICO / LEGAL</div>
+            <div class="data-item"><span>PROTOCOLO:</span> AISLAMIENTO FORENSE</div>
+            <div class="data-item"><span>ACCIÓN:</span> REMISIÓN A AUTORIDADES</div>
+        </div>
+
+        <div class="evidence-section">
+            <p>>> EVIDENCIA FOTOGRÁFICA REGISTRADA EN TIEMPO REAL <<</p>
+            <!-- La imagen debe llamarse exactamente captura.png -->
+            <img src="captura.png" alt="Evidencia de Captura">
+        </div>
+
+        <div class="footer">
+            EXPEDIENTE DIGITAL AUTogenerado por la RED NACIONAL. La persistencia o intento de vulnerar los sistemas informáticos públicos acarreará consecuencias judiciales directas.
+        </div>
+    </div>
+
+</body>
+</html>
